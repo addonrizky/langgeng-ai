@@ -1,0 +1,19 @@
+version: "2"
+services:
+    llm:
+        build : .
+        ports: 
+            - "4004:4004"
+        volumes:
+            - .:/app9/
+        working_dir: /app9
+        command: 
+            - /bin/bash
+            - -c
+            - |
+                ./main
+                tail -f /dev/null
+        networks:
+            - default
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
