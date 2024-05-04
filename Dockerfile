@@ -40,7 +40,7 @@ RUN mkdir -p $HOME/.venvs \
     && python3 -m venv $HOME/.venvs/MyEnv \
     && $HOME/.venvs/MyEnv/bin/python -m pip install chromadb \
     && $HOME/.venvs/MyEnv/bin/python -m pip install openai \
-    && $HOME/.venvs/MyEnv/bin/python -m pip install langchain \
+    && $HOME/.venvs/MyEnv/bin/python -m pip install langchain==0.1.0  \
     && $HOME/.venvs/MyEnv/bin/python -m pip install tiktoken
 
 RUN echo "alias python=$HOME/.venvs/MyEnv/bin/python" >> ~/.bashrc
