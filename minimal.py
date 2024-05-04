@@ -6,7 +6,7 @@ from langchain.indexes import VectorstoreIndexCreator
 import warnings
 warnings.filterwarnings('ignore')
 
-os.environ["OPENAI_API_KEY"] = "YOUR OPEN AI API KEY HEREE ..."
+os.environ["OPENAI_API_KEY"] = "...................."
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
